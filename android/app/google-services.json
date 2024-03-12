@@ -1,0 +1,54 @@
+{
+  "project_info": {
+    "project_number": "968383503417",
+    "project_id": "signin-f777a",
+    "storage_bucket": "signin-f777a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:968383503417:android:886d9a04f8107c0c3601e8",
+        "android_client_info": {
+          "package_name": "com.example.google_login"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "968383503417-4kdgfanvohh2qpodhs3ildriq2g5u7uq.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.google_login",
+            "certificate_hash": "dff220185322a6b9f7fb336b218b0a892dcc8129"
+          }
+        },
+        {
+          "client_id": "968383503417-58u5tn3vp06rqaf5014hphttspbaeso3.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAtULw-CslWo4N9XMV84JTnmnGiDgBPAcg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "968383503417-58u5tn3vp06rqaf5014hphttspbaeso3.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "968383503417-srckcrj2uej8q792qp89sofhl3a42gv4.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.googleLogin"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

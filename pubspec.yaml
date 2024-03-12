@@ -1,0 +1,38 @@
+name: google_login
+version: 1.0.0+1
+publish_to: none
+description: A new Flutter project.
+environment:
+  sdk: '>=3.2.6 <4.0.0'
+
+dependencies: 
+  cupertino_icons: ^1.0.2
+  get: 4.6.6
+  firebase_core:
+  firebase_auth:
+  google_fonts: 6.1.0
+  shared_preferences:
+  font_awesome_flutter:
+  dio: 4.0.6
+  flutter_launcher_icons:
+
+#  google_sign_in:
+  flutter: 
+    sdk: flutter
+
+flutter_launcher_icons:
+  android: "launcher_icon"
+  ios: true
+  image_path: "assets/images/logo.png"
+
+dev_dependencies: 
+  flutter_lints: ^2.0.0
+  flutter_test: 
+    sdk: flutter
+
+flutter: 
+  uses-material-design: true
+
+  assets:
+    - assets/images/
+
