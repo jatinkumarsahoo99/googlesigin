@@ -1,5 +1,6 @@
 import 'dart:convert';
 
+import 'package:firebase_auth/firebase_auth.dart';
 import 'package:get/get.dart';
 import 'package:google_login/app/data/helper.dart';
 
@@ -12,6 +13,9 @@ class DashboardscreenController extends GetxController with Helper {
 
   final count = 0.obs;
   GoogleSignInResponse? googleSignInResponse;
+
+  final FirebaseAuth _auth = FirebaseAuth.instance;
+
   getData() async {
     dynamic isLoginData = await SharedPreferencesKeys().getStringData(key: 'loginData');
     if(isLoginData != null && isLoginData != ""){
@@ -33,6 +37,7 @@ class DashboardscreenController extends GetxController with Helper {
     if (isOk) {
       await SharedPreferencesKeys().setStringData(key: "login", text: "false");
       await SharedPreferencesKeys().setStringData(key: "loginData", text: "");
+      _auth.signOut();
       Get.offAndToNamed(Routes.LOGINSCREEN);
       // ignore: use_build_context_synchronously
     }
